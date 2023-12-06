@@ -17,7 +17,7 @@
       <h1>{$_('title')}</h1>
     </div>
     <div class="container__toggle">
-      <span>{$_('toggle_label')}: </span>
+      <span>{$_('toggle_label')} </span>
       <select {value} on:change={handleLocaleChange}>
         <option value="en" selected>English</option>
         <option value="de">German</option>
