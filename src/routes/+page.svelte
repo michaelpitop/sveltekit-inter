@@ -15,12 +15,13 @@
   {#if $isLocaleLoaded}
     <div class="container__title">
       <h1>{$_('title')}</h1>
+      <h2>{$_('undertitle')}</h2>
     </div>
     <div class="container__toggle">
       <span>{$_('toggle_label')} </span>
       <select {value} on:change={handleLocaleChange}>
         <option value="en" selected>English</option>
-        <option value="de">German</option>
+        <option value="de">Deutsch</option>
       </select>
 
     </div>
@@ -29,3 +30,4 @@
     <div class="container__content">Locale initializing...</div>
   {/if}
 </div>
+

@@ -26,9 +26,7 @@ function getLocaleForFormat() {
 		case 'en':
 			return 'en-US';
 		case 'fr':
-			return 'fr-FR';
-		case 'hi':
-			return 'hi-IN';
+			return 'de-GER';
 		default:
 			return 'en-US';
 	}
