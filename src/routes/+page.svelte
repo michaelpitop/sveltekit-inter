@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { goto } from '$app/navigation';
+  import { goto } from '$app/navigation';
 	import { isLocaleLoaded } from '$lib/i18n';
   import { _, locale, locales } from 'svelte-i18n';
 
@@ -15,17 +15,10 @@
 
 <div class="container">
   {#if $isLocaleLoaded}
-    <!-- <div class="container__title">
-      <h1>{$_('title')}</h1>
-      <h2>{$_('undertitle')}</h2>
-    </div> -->
-    <div class="container__toggle">
-      <span>{$_('toggle_label')} </span>
-      <select {value} on:change={handleLocaleChange}>
-        <option value="en" selected>English</option>
-        <option value="de">Deutsch</option>
-      </select>
-
+    
+    <div>
+      <button on:click={handleLocaleChange} value="en">English</button>
+      <button on:click={handleLocaleChange} value="de">Deutsch</button>
     </div>
 
   {:else}

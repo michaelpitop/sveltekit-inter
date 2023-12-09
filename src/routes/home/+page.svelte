@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { isLocaleLoaded } from '$lib/i18n';
+  import { isLocaleLoaded } from '$lib/i18n';
   import { _, locale, locales } from 'svelte-i18n';
 
-  let value: string = '';
-
+  let value = $locale;
   function handleLocaleChange(event: any) {
     event.preventDefault();
     value = event?.target?.value;
@@ -20,7 +19,7 @@
     <div class="container__toggle">
       <span>{$_('toggle_label')} </span>
       <select {value} on:change={handleLocaleChange}>
-        <option value="en" selected>English</option>
+        <option value="en">English</option>
         <option value="de">Deutsch</option>
       </select>
 
