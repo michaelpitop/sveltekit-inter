@@ -57,6 +57,7 @@
   }
   button {
     border: none;
+    background-color: white;
     color: black;
     padding: 16px 32px;
     text-align: center;
@@ -68,11 +69,13 @@
     text-decoration: none;
     cursor: pointer;   
     border-radius: 15%; 
+    position: relative;
   }
   button:hover {
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px #5a01a7;
-    transition: 0.7s;
+    border: 1cm;
+    border-color: transparent;
+    border-style:solid;
+    box-shadow: 0 0 0 4px #0926c9;
+    transition: 0.5s;
   }
 </style>
