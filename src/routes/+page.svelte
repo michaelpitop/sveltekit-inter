@@ -16,12 +16,12 @@
 
 <div class="buttons-div" >
   {#if $isLocaleLoaded}
+    <!-- <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
+    <br> -->
     <br>
     <br>
     <br>
@@ -33,8 +33,9 @@
     <br>
     <div  class="lang-container">
     
-      <button on:click={handleLocaleChange} value="en">English</button>
-      <button on:click={handleLocaleChange} value="de">Deutsch</button>
+      <button on:click={handleLocaleChange} value="en"><strong>English</strong></button>
+      <button on:click={handleLocaleChange} value="de"><strong>Deutsch</strong></button>
+
       
     </div>
 
@@ -50,7 +51,7 @@
   }
 
   .lang-container  {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -58,7 +59,7 @@
   }
   button {
     border: none;
-    background-color: white;
+    background-color: transparent;
     color: black;
     padding: 16px 32px;
     text-align: center;
@@ -73,10 +74,10 @@
     position: relative;
   }
   button:hover {
-    border: 1cm;
+    /* border-bottom: 1px; */
     border-color: transparent;
-    border-style:solid;
-    box-shadow: 0 0 0 4px #0926c9;
-    transition: 0.5s;
+    border-style: solid;
+    box-shadow: 0 0 0 2px black;
+    transition: 0.1s;
   }
 </style>

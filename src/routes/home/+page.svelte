@@ -1,6 +1,7 @@
 <script lang="ts">
   import { isLocaleLoaded } from '$lib/i18n';
   import { _, locale, locales } from 'svelte-i18n';
+  // import styles from '/home/michaelpitop/code/michaelpitop/sveltekit-inter/src/styles.css';
 
   let value = $locale;
   function handleLocaleChange(event: any) {
