@@ -2,6 +2,7 @@
   import { goto } from '$app/navigation';
 	import { isLocaleLoaded } from '$lib/i18n';
   import { _, locale, locales } from 'svelte-i18n';
+  import styles from '/home/michaelpitop/code/michaelpitop/sveltekit-inter/src/styles.css';
 
   let value: string = 'en';
 
