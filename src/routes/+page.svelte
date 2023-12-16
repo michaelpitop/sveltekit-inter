@@ -4,7 +4,7 @@
   import { _, locale, locales } from 'svelte-i18n';
   import styles from '/src/styles.css';
 
-  let value: string = 'en';
+  let value = '';
 
   function handleLocaleChange(event: any) {
     event.preventDefault();

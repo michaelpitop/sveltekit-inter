@@ -9,6 +9,8 @@
     value = event?.target?.value;
     $locale = value;
   }
+
+
 </script>
 
 <div class="container">
