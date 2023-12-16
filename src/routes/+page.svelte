@@ -2,7 +2,7 @@
   import { goto } from '$app/navigation';
 	import { isLocaleLoaded } from '$lib/i18n';
   import { _, locale, locales } from 'svelte-i18n';
-  import styles from '/home/michaelpitop/code/michaelpitop/sveltekit-inter/src/styles.css';
+  import styles from '/src/styles.css';
 
   let value: string = 'en';
 
@@ -16,12 +16,6 @@
 
 <div class="buttons-div" >
   {#if $isLocaleLoaded}
-    <!-- <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> -->
     <br>
     <br>
     <br>
@@ -31,12 +25,9 @@
     <br>
     <br>
     <br>
-    <div  class="lang-container">
-    
+    <div class="lang-container">
       <button on:click={handleLocaleChange} value="en"><strong>English</strong></button>
       <button on:click={handleLocaleChange} value="de"><strong>Deutsch</strong></button>
-
-      
     </div>
 
   {:else}
